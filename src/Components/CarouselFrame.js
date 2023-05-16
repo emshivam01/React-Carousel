@@ -2,7 +2,7 @@ import { useState } from "react";
 import { imgArr } from "../Config";
 
 const CarouseFrame = () => {
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(1);
 
   const commanClasses =
     "w-16 h-16 font-semibold text-xl border-2 border-gray-950 rounded-full flex justify-center items-center material-symbols-rounded cursor-pointer";
