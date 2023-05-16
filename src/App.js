@@ -1,7 +1,6 @@
-
-import './App.css';
-import CarouseFrame from './Components/CarouselFrame';
-import Header from './Components/Header';
+import "./App.css";
+import CarouseFrame from "./Components/CarouselFrame";
+import Header from "./Components/Header";
 
 function App() {
   return (
