@@ -5,7 +5,7 @@ const CarouseFrame = () => {
   const [index, setIndex] = useState(1);
 
   const commanClasses =
-    "w-16 h-16 font-semibold text-xl border-2 border-gray-950 rounded-full flex justify-center items-center material-symbols-rounded cursor-pointer";
+    "w-16 h-16 font-semibold text-xl border-2 border-gray-800 rounded-full flex justify-center items-center material-symbols-rounded shadow-xl";
 
   const leftButtonClassName =
     commanClasses + (index < 1 ? "cursor-not-allowed opacity-30" : "");
@@ -29,17 +29,17 @@ const CarouseFrame = () => {
 
   return (
     <div className="flex justify-between items-center m-auto my-8 h-[800px] w-3/4 bg-transparent ">
-      <span onClick={ToggleCarouselDown} className={leftButtonClassName}>
+      <button onClick={ToggleCarouselDown} className={leftButtonClassName}>
         arrow_back_ios
-      </span>
+      </button>
       <img
         className="w-4/5 object-contain rounded-md shadow-2xl"
         src={imgArr[index].url}
         alt={imgArr[index].alt}
       />
-      <span onClick={ToggleCarouselUp} className={rightButtonClassName}>
+      <button onClick={ToggleCarouselUp} className={rightButtonClassName}>
         arrow_forward_ios
-      </span>
+      </button>
     </div>
   );
 };
